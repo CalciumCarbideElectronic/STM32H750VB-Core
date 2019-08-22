@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name CommonParts)(type Legacy)(uri ${KIPRJMOD}/CommonParts.lib)(options "")(descr ""))
+)
