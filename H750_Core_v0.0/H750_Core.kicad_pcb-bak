@@ -11,10 +11,10 @@
 
   (page A4)
   (layers
-    (0 F.Cu signal)
+    (0 F.Cu signal hide)
     (1 GND power hide)
-    (2 PWR power)
-    (31 B.Cu signal)
+    (2 PWR power hide)
+    (31 B.Cu signal hide)
     (32 B.Adhes user hide)
     (33 F.Adhes user hide)
     (34 B.Paste user hide)
@@ -11655,7 +11655,7 @@
   (segment (start 116.55 85.3872) (end 115.688 85.3872) (width 0.15) (layer B.Cu) (net 193))
   (segment (start 124.4092 72.9615) (end 114.5667 82.804) (width 0.15) (layer F.Cu) (net 193))
 
-  (zone (net 1) (net_name GND) (layer GND) (tstamp 5D6A8877) (hatch edge 0.508)
+  (zone (net 1) (net_name GND) (layer GND) (tstamp 5D6A23E2) (hatch edge 0.508)
     (connect_pads yes (clearance 0.508))
     (min_thickness 0.254)
     (fill yes (arc_segments 32) (thermal_gap 0.508) (thermal_bridge_width 0.508))
