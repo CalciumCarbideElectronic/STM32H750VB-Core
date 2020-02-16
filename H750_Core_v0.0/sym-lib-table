@@ -1,3 +1,5 @@
 (sym_lib_table
   (lib (name CommonParts)(type Legacy)(uri ${KIPRJMOD}/CommonParts.lib)(options "")(descr ""))
+  (lib (name H750_Core-rescue)(type Legacy)(uri ${KIPRJMOD}/H750_Core-rescue.lib)(options "")(descr ""))
+  (lib (name thvd1450)(type Legacy)(uri C:/Users/MISAK/Desktop/Project/pabaseboard/thvd1450.lib)(options "")(descr ""))
 )

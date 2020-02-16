@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:H750_Core-cache
 EELAYER 30 0
 EELAYER END
 $Descr A3 16535 11693
@@ -36,14 +35,6 @@ F 3 "" H 10850 3700 50  0001 C CNN
 	1    10950 3600
 	1    0    0    -1  
 $EndComp
-Text HLabel 8700 6450 2    50   BiDi ~ 0
-SWDIO
-Text HLabel 8700 6550 2    50   BiDi ~ 0
-SWCLK
-Text HLabel 8700 6750 2    50   BiDi ~ 0
-T_JTDI
-Text HLabel 8700 6650 2    50   BiDi ~ 0
-SWO
 Text HLabel 8550 3050 2    50   BiDi ~ 0
 BOOT0
 Wire Wire Line
@@ -150,15 +141,15 @@ Text Label 10000 4800 0    50   ~ 0
 PB2
 Text Label 8300 4750 2    50   ~ 0
 PB0
-Text Label 10000 4300 0    50   ~ 0
+Text Label 10000 3900 0    50   ~ 0
 PE15
-Text Label 10000 4200 0    50   ~ 0
+Text Label 10000 4000 0    50   ~ 0
 PE14
 Text Label 10000 4100 0    50   ~ 0
 PE13
-Text Label 10000 4000 0    50   ~ 0
+Text Label 10000 4200 0    50   ~ 0
 PE12
-Text Label 10000 3900 0    50   ~ 0
+Text Label 10000 4300 0    50   ~ 0
 PE11
 Text Label 10000 4400 0    50   ~ 0
 PE10
@@ -169,15 +160,15 @@ PE8
 Text Label 10000 4700 0    50   ~ 0
 PE7
 Wire Wire Line
-	10000 4300 10400 4300
-Wire Wire Line
-	10000 4200 10400 4200
-Wire Wire Line
-	10000 4100 10400 4100
+	10000 3900 10400 3900
 Wire Wire Line
 	10000 4000 10400 4000
 Wire Wire Line
-	10000 3900 10400 3900
+	10000 4100 10400 4100
+Wire Wire Line
+	10000 4200 10400 4200
+Wire Wire Line
+	10000 4300 10400 4300
 Wire Wire Line
 	10000 4400 10400 4400
 Wire Wire Line
@@ -316,87 +307,13 @@ Text Label 8300 2550 2    50   ~ 0
 PB3
 Wire Wire Line
 	8550 3050 7900 3050
-Text HLabel 8700 6850 2    50   BiDi ~ 0
-NRST
-Wire Wire Line
-	8550 6450 8700 6450
-Wire Wire Line
-	8550 6550 8700 6550
-Wire Wire Line
-	8550 6650 8700 6650
-Wire Wire Line
-	8550 6750 8700 6750
-Wire Wire Line
-	8550 6850 8700 6850
-Text GLabel 7550 6450 0    50   BiDi ~ 0
-3V3_VDD
-Wire Wire Line
-	7550 6450 8050 6450
 $Comp
-L power:GND #PWR013
-U 1 1 5D97C451
-P 7550 6650
-F 0 "#PWR013" H 7550 6400 50  0001 C CNN
-F 1 "GND" V 7555 6522 50  0000 R CNN
-F 2 "" H 7550 6650 50  0001 C CNN
-F 3 "" H 7550 6650 50  0001 C CNN
-	1    7550 6650
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	7550 6650 7800 6650
-Wire Wire Line
-	8050 6550 7800 6550
-Wire Wire Line
-	7800 6550 7800 6650
-Connection ~ 7800 6650
-Wire Wire Line
-	7800 6650 8050 6650
-$Comp
-L power:GND #PWR012
-U 1 1 5D996424
-P 7300 6850
-F 0 "#PWR012" H 7300 6600 50  0001 C CNN
-F 1 "GND" V 7305 6722 50  0000 R CNN
-F 2 "" H 7300 6850 50  0001 C CNN
-F 3 "" H 7300 6850 50  0001 C CNN
-	1    7300 6850
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R_Small R4
-U 1 1 5D997327
-P 7650 6850
-F 0 "R4" V 7454 6850 50  0000 C CNN
-F 1 "10K" V 7545 6850 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 7650 6850 50  0001 C CNN
-F 3 "~" H 7650 6850 50  0001 C CNN
-	1    7650 6850
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	7550 6850 7300 6850
-Wire Wire Line
-	7750 6850 8050 6850
-NoConn ~ 8050 6750
-$Comp
-L Connector_Generic:Conn_02x05_Odd_Even J1
-U 1 1 5D9C1307
-P 8250 6650
-F 0 "J1" H 8300 7067 50  0000 C CNN
-F 1 "JTAG" H 8300 6976 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_2x05_P2.54mm_Vertical" H 8250 6650 50  0001 C CNN
-F 3 "~" H 8250 6650 50  0001 C CNN
-	1    8250 6650
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector:Conn_01x04_Male J2
+L Connector:Conn_01x05_Male J2
 U 1 1 5D9C3EC6
 P 9700 6600
-F 0 "J2" H 9808 6881 50  0000 C CNN
-F 1 "DFU_CONN" H 9808 6790 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical" H 9700 6600 50  0001 C CNN
+F 0 "J2" H 9800 7050 50  0000 C CNN
+F 1 "DFU_CONN" H 9800 6950 50  0000 C CNN
+F 2 "Connector_JST:JST_EH_B5B-EH-A_1x05_P2.50mm_Vertical" H 9700 6600 50  0001 C CNN
 F 3 "~" H 9700 6600 50  0001 C CNN
 	1    9700 6600
 	1    0    0    -1  
@@ -443,8 +360,6 @@ Text HLabel 7750 8250 0    50   BiDi ~ 0
 SWDIO
 Text HLabel 7750 8100 0    50   BiDi ~ 0
 SWCLK
-Text HLabel 7750 7700 0    50   BiDi ~ 0
-T_JTDI
 Text HLabel 7750 7850 0    50   BiDi ~ 0
 SWO
 Wire Wire Line
@@ -1157,6 +1072,53 @@ Wire Wire Line
 Connection ~ 10150 2400
 Wire Wire Line
 	10150 2400 10400 2400
+Text HLabel 10100 6400 2    50   BiDi ~ 0
+SWO
+Wire Wire Line
+	10100 6400 9900 6400
+NoConn ~ 7750 7700
+$Comp
+L Connector:Conn_01x05_Male J1
+U 1 1 5E4AEDC5
+P 8300 6600
+F 0 "J1" H 8400 7050 50  0000 C CNN
+F 1 "DFU_CONN" H 8400 6950 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical" H 8300 6600 50  0001 C CNN
+F 3 "~" H 8300 6600 50  0001 C CNN
+	1    8300 6600
+	1    0    0    -1  
+$EndComp
+Text HLabel 8700 6500 2    50   BiDi ~ 0
+SWDIO
+Text HLabel 8700 6700 2    50   BiDi ~ 0
+SWCLK
+$Comp
+L power:GND #PWR060
+U 1 1 5E4AEDCD
+P 9050 6600
+F 0 "#PWR060" H 9050 6350 50  0001 C CNN
+F 1 "GND" V 9055 6472 50  0000 R CNN
+F 2 "" H 9050 6600 50  0001 C CNN
+F 3 "" H 9050 6600 50  0001 C CNN
+	1    9050 6600
+	0    -1   -1   0   
+$EndComp
+Text GLabel 8700 7000 2    50   BiDi ~ 0
+3V3_VDD
+Wire Wire Line
+	9050 6600 8500 6600
+Wire Wire Line
+	8700 7000 8700 6800
+Wire Wire Line
+	8700 6800 8500 6800
+Wire Wire Line
+	8700 6700 8500 6700
+Wire Wire Line
+	8700 6500 8500 6500
+Text HLabel 8700 6400 2    50   BiDi ~ 0
+SWO
+Wire Wire Line
+	8700 6400 8500 6400
 Wire Bus Line
 	2450 2150 2450 4550
 Wire Bus Line

@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:H750_Core-cache
 EELAYER 30 0
 EELAYER END
 $Descr A3 16535 11693
@@ -1013,8 +1012,6 @@ Text HLabel 10100 2500 2    50   BiDi ~ 0
 SWO
 Text HLabel 5400 3600 0    50   BiDi ~ 0
 SWCLK
-Text HLabel 5400 3700 0    50   BiDi ~ 0
-T_JTDI
 $Comp
 L Jumper:Jumper_2_Bridged JP12
 U 1 1 5DA2783E
@@ -1026,21 +1023,6 @@ F 3 "~" H 9700 2500 50  0001 C CNN
 	1    9700 2500
 	1    0    0    -1  
 $EndComp
-$Comp
-L Jumper:Jumper_2_Bridged JP8
-U 1 1 5DA28DD9
-P 5850 3700
-F 0 "JP8" H 5850 3895 50  0000 C CNN
-F 1 "Jumper_2_Bridged" H 5850 3804 50  0000 C CNN
-F 2 "H750_Core:JP" H 5850 3700 50  0001 C CNN
-F 3 "~" H 5850 3700 50  0001 C CNN
-	1    5850 3700
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6050 3700 7050 3700
-Wire Wire Line
-	5650 3700 5400 3700
 $Comp
 L Jumper:Jumper_2_Bridged JP7
 U 1 1 5DA4E3BA
@@ -1342,8 +1324,6 @@ Wire Wire Line
 Connection ~ 14900 6300
 Wire Wire Line
 	14900 6300 14250 6300
-Text HLabel 14600 5400 2    50   BiDi ~ 0
-NRST
 Wire Wire Line
 	15000 5650 15000 5550
 Wire Wire Line
@@ -1351,17 +1331,8 @@ Wire Wire Line
 Wire Wire Line
 	14250 5550 14250 5700
 Wire Wire Line
-	14250 5550 13800 5550
-Wire Wire Line
 	13250 5550 13250 5700
 Connection ~ 14250 5550
-Wire Wire Line
-	14600 5400 13800 5400
-Wire Wire Line
-	13800 5400 13800 5550
-Connection ~ 13800 5550
-Wire Wire Line
-	13800 5550 13250 5550
 Text Label 12650 5550 2    50   ~ 0
 NRST
 Connection ~ 13250 5550
@@ -1495,62 +1466,6 @@ Wire Wire Line
 	14900 7550 13800 7550
 Connection ~ 14900 7550
 Connection ~ 13800 7550
-Entry Wire Line
-	3500 8300 3600 8200
-Entry Wire Line
-	3500 8200 3600 8100
-Entry Wire Line
-	3500 8100 3600 8000
-Entry Wire Line
-	3500 8000 3600 7900
-Entry Wire Line
-	3500 7900 3600 7800
-Entry Wire Line
-	3500 7800 3600 7700
-Entry Wire Line
-	3500 7700 3600 7600
-Entry Wire Line
-	3500 7600 3600 7500
-Entry Wire Line
-	3500 7500 3600 7400
-Entry Wire Line
-	3500 7400 3600 7300
-Entry Wire Line
-	3500 7300 3600 7200
-Entry Wire Line
-	3500 7200 3600 7100
-Entry Wire Line
-	3500 7100 3600 7000
-Entry Wire Line
-	3500 7000 3600 6900
-Text Label 4150 8200 2    50   ~ 0
-PC6
-Text Label 4150 8100 2    50   ~ 0
-PD4
-Text Label 4150 8000 2    50   ~ 0
-PC8
-Text Label 4150 7900 2    50   ~ 0
-PD11
-Text Label 4150 7800 2    50   ~ 0
-PD12
-Text Label 4150 7700 2    50   ~ 0
-PD5
-Text Label 4150 7600 2    50   ~ 0
-PD14
-Text Label 4150 7500 2    50   ~ 0
-PD15
-Text Label 4150 7400 2    50   ~ 0
-PD0
-Text Label 4150 7300 2    50   ~ 0
-PD1
-Text Label 4150 7200 2    50   ~ 0
-PE7
-Text Label 4150 7100 2    50   ~ 0
-PE8
-Text Label 4150 7000 2    50   ~ 0
-PE9
-Text Label 4150 6900 2    50   ~ 0
-PE10
 Text GLabel 1600 3900 0    50   BiDi ~ 0
 PA[0...15]
 Text GLabel 2300 3900 0    50   BiDi ~ 0
@@ -1561,8 +1476,6 @@ Text GLabel 1600 6450 0    50   BiDi ~ 0
 PD[0...15]
 Text GLabel 2300 6450 0    50   BiDi ~ 0
 PE[0...15]
-Text GLabel 3500 6450 0    50   BiDi ~ 0
-NAND_Flash[0...13]
 Wire Wire Line
 	14900 5650 14900 5550
 Connection ~ 14900 5550
@@ -1579,116 +1492,69 @@ F 3 "~" H 13700 4100 50  0001 C CNN
 	1    13700 4100
 	0    1    1    0   
 $EndComp
-Text Label 3600 6900 2    50   ~ 0
-NAND_Flash0
-Text Label 3600 7000 2    50   ~ 0
-NAND_Flash1
-Text Label 3600 7100 2    50   ~ 0
-NAND_Flash2
-Text Label 3600 7200 2    50   ~ 0
-NAND_Flash3
-Text Label 3600 7300 2    50   ~ 0
-NAND_Flash4
-Text Label 3600 7400 2    50   ~ 0
-NAND_Flash5
-Text Label 3600 7700 2    50   ~ 0
-NAND_Flash8
-Text Label 3600 7500 2    50   ~ 0
-NAND_Flash6
-Text Label 3600 7600 2    50   ~ 0
-NAND_Flash7
 Wire Wire Line
-	3600 6900 4150 6900
-Text Label 3600 7800 2    50   ~ 0
-NAND_Flash9
-Text Label 3600 7900 2    50   ~ 0
-NAND_Flash10
-Text Label 3600 8000 2    50   ~ 0
-NAND_Flash11
-Text Label 3600 8100 2    50   ~ 0
-NAND_Flash12
-Text Label 3600 8200 2    50   ~ 0
-NAND_Flash13
-Wire Wire Line
-	3600 8200 4150 8200
-Wire Wire Line
-	3600 8100 4150 8100
-Wire Wire Line
-	3600 8000 4150 8000
-Wire Wire Line
-	3600 7900 4150 7900
-Wire Wire Line
-	3600 7800 4150 7800
-Wire Wire Line
-	3600 7700 4150 7700
-Wire Wire Line
-	3600 7600 4150 7600
-Wire Wire Line
-	3600 7500 4150 7500
-Wire Wire Line
-	3600 7400 4150 7400
-Wire Wire Line
-	3600 7300 4150 7300
-Wire Wire Line
-	3600 7200 4150 7200
-Wire Wire Line
-	3600 7100 4150 7100
-Wire Wire Line
-	3600 7000 4150 7000
-Wire Wire Line
-	5050 7450 5350 7450
-Text Label 5350 7450 2    50   ~ 0
+	3850 7450 4150 7450
+Text Label 4150 7450 2    50   ~ 0
 PC10
 Wire Wire Line
-	5050 7350 5350 7350
-Text Label 5350 7350 2    50   ~ 0
+	3850 7350 4150 7350
+Text Label 4150 7350 2    50   ~ 0
 PC9
 Wire Wire Line
-	5050 7250 5350 7250
-Text Label 5350 7250 2    50   ~ 0
+	3850 7250 4150 7250
+Text Label 4150 7250 2    50   ~ 0
 PB2
 Wire Wire Line
-	5050 7150 5350 7150
-Text Label 5350 7150 2    50   ~ 0
+	3850 7150 4150 7150
+Text Label 4150 7150 2    50   ~ 0
 PB10
 Wire Wire Line
-	5050 7050 5350 7050
-Text Label 5350 7050 2    50   ~ 0
+	3850 7050 4150 7050
+Text Label 4150 7050 2    50   ~ 0
 PE2
 Wire Wire Line
-	5050 6950 5350 6950
-Text Label 5350 6950 2    50   ~ 0
+	3850 6950 4150 6950
+Text Label 4150 6950 2    50   ~ 0
 PD13
 Entry Wire Line
-	4950 7450 5050 7350
+	3750 7450 3850 7350
 Entry Wire Line
-	4950 7350 5050 7250
+	3750 7350 3850 7250
 Entry Wire Line
-	4950 7250 5050 7150
+	3750 7250 3850 7150
 Entry Wire Line
-	4950 7150 5050 7050
+	3750 7150 3850 7050
 Entry Wire Line
-	4950 7050 5050 6950
-Text GLabel 4950 6450 0    50   BiDi ~ 0
+	3750 7050 3850 6950
+Text GLabel 3750 6450 0    50   BiDi ~ 0
 QSPI_Flash[0...5]
-Text Label 5050 6950 2    50   ~ 0
+Text Label 3850 6950 2    50   ~ 0
 QSPI_Flash0
-Text Label 5050 7050 2    50   ~ 0
+Text Label 3850 7050 2    50   ~ 0
 QSPI_Flash1
-Text Label 5050 7150 2    50   ~ 0
+Text Label 3850 7150 2    50   ~ 0
 QSPI_Flash2
-Text Label 5050 7250 2    50   ~ 0
+Text Label 3850 7250 2    50   ~ 0
 QSPI_Flash3
-Text Label 5050 7350 2    50   ~ 0
+Text Label 3850 7350 2    50   ~ 0
 QSPI_Flash4
-Text Label 5050 7450 2    50   ~ 0
+Text Label 3850 7450 2    50   ~ 0
 QSPI_Flash5
 Entry Wire Line
-	4950 7550 5050 7450
+	3750 7550 3850 7450
+Wire Wire Line
+	13250 5550 13800 5550
+Wire Wire Line
+	6650 3700 7050 3700
+Text HLabel 13800 5200 2    50   BiDi ~ 0
+NRST
+Wire Wire Line
+	13800 5200 13800 5550
+Connection ~ 13800 5550
+Wire Wire Line
+	13800 5550 14250 5550
 Wire Bus Line
-	4950 6450 4950 7700
-Wire Bus Line
-	3500 6450 3500 8850
+	3750 6450 3750 7700
 Wire Bus Line
 	1600 3900 1600 6300
 Wire Bus Line
